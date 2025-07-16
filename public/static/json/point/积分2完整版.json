@@ -1,0 +1,2019 @@
+{
+    "videoSource": "/static/video/积分2.mp4",
+    "name": "积分演示2",
+    "nodes": [
+        {
+            "id": "axis",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 100,
+                "y": 100,
+                "z": 0
+            },
+            "position": {
+                "x": 100,
+                "y": 100
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "axis",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node axis",
+                "params": {
+                    "type": "Axes",
+                    "x_range": [
+                        -4,
+                        4,
+                        1
+                    ],
+                    "y_range": [
+                        -4,
+                        4,
+                        1
+                    ],
+                    "axis_config": {
+                        "include_numbers": true,
+                        "font_size": 24,
+                        "color": "WHITE"
+                    },
+                    "z_range": [],
+                    "chooseType": [
+                        "axis",
+                        "Axes"
+                    ],
+                    "necessary": [
+                        "x_range",
+                        "y_range"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_2",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 620,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 620,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_2",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_2",
+                "params": {
+                    "type": "Graph",
+                    "function": "2*sin(x)",
+                    "x_range": [
+                        -3.1415,
+                        3.1415
+                    ],
+                    "color": "WHITE",
+                    "stroke_width": 2,
+                    "use_axes": true,
+                    "chooseType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "necessary": [
+                        "function",
+                        "x_range",
+                        "use_axes"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Graph"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_1",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 947,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 947,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "block_1",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_1",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_1",
+                "params": {
+                    "type": "Create",
+                    "run_time": 1,
+                    "start_time": 1,
+                    "rate_func": "linear",
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_3",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1120,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 1120,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_3",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_3",
+                "params": {
+                    "type": "Riemann",
+                    "curve": "block_2",
+                    "x_range": [
+                        -3.1415,
+                        3.1415
+                    ],
+                    "width": "0.5",
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Riemann"
+                    ],
+                    "necessary": [
+                        "curve",
+                        "x_range",
+                        "width"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Riemann"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_6",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1447,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 1447,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "block_6",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_6",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_6",
+                "params": {
+                    "type": "Create",
+                    "run_time": 1,
+                    "start_time": 3,
+                    "rate_func": "linear",
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_4",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1120,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 1120,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_4",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_4",
+                "params": {
+                    "type": "Riemann",
+                    "curve": "block_2",
+                    "x_range": [
+                        -3.1415,
+                        3.1415
+                    ],
+                    "width": 0.1,
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Riemann"
+                    ],
+                    "necessary": [
+                        "curve",
+                        "x_range",
+                        "width"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Riemann"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_7",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1447,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 1447,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "block_7",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "input_target",
+                        "position": "left",
+                        "nodeId": "block_7",
+                        "type": "source",
+                        "x": -3,
+                        "y": 176.66666666666666,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_7",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_7",
+                "params": {
+                    "type": "ReplacementTransform",
+                    "run_time": 1,
+                    "start_time": 5,
+                    "target_object": "block_4",
+                    "rate_func": "linear",
+                    "chooseType": [
+                        "ReplacementTransform"
+                    ],
+                    "necessary": [
+                        "target_object",
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "ReplacementTransform"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_5",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 620,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 620,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_5",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_5",
+                "params": {
+                    "type": "Riemann",
+                    "curve": "block_2",
+                    "x_range": [
+                        -3.1415,
+                        3.1415
+                    ],
+                    "width": "0.01",
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Riemann"
+                    ],
+                    "necessary": [
+                        "curve",
+                        "x_range",
+                        "width"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Riemann"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_8",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 947,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 947,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "block_8",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "input_target",
+                        "position": "left",
+                        "nodeId": "block_8",
+                        "type": "source",
+                        "x": -3,
+                        "y": 176.66666666666666,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_8",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_8",
+                "params": {
+                    "type": "ReplacementTransform",
+                    "run_time": 1,
+                    "start_time": 7,
+                    "target_object": "block_5",
+                    "rate_func": "linear",
+                    "chooseType": [
+                        "ReplacementTransform"
+                    ],
+                    "necessary": [
+                        "target_object",
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "ReplacementTransform"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_10",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 120,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 120,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_10",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_10",
+                "params": {
+                    "type": "MathTex",
+                    "formula": "f(x)=sin(x)",
+                    "position": [
+                        3,
+                        -1,
+                        0
+                    ],
+                    "font_size": 24,
+                    "color": "WHITE",
+                    "use_axes": true,
+                    "chooseType": [
+                        "text",
+                        "MathTex"
+                    ],
+                    "necessary": [
+                        "formula",
+                        "use_axes"
+                    ],
+                    "lastType": [
+                        "text",
+                        "MathTex"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_11",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 447,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 447,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "block_11",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_11",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_11",
+                "params": {
+                    "type": "Create",
+                    "run_time": 1,
+                    "start_time": "1",
+                    "rate_func": "linear",
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_12",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 120,
+                "y": 950,
+                "z": 0
+            },
+            "position": {
+                "x": 120,
+                "y": 950
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_12",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_12",
+                "params": {
+                    "type": "MathTex",
+                    "formula": "\\int_{-\\pi}^{\\pi} 2\\sin(x) \\, dx = 0",
+                    "position": [
+                        -3,
+                        3,
+                        0
+                    ],
+                    "font_size": 24,
+                    "color": "WHITE",
+                    "use_axes": true,
+                    "chooseType": [
+                        "text",
+                        "MathTex"
+                    ],
+                    "necessary": [
+                        "formula",
+                        "use_axes"
+                    ],
+                    "lastType": [
+                        "text",
+                        "MathTex"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_14",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 447,
+                "y": 950,
+                "z": 0
+            },
+            "position": {
+                "x": 447,
+                "y": 950
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "block_14",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "block_14",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node block_14",
+                "params": {
+                    "type": "Create",
+                    "run_time": "3",
+                    "start_time": "2",
+                    "rate_func": "linear",
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "vueflow__edge-block_3output-block_6input",
+            "type": "default",
+            "source": "block_3",
+            "target": "block_6",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "block_3",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1120,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1120,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_3",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_3",
+                    "params": {
+                        "type": "Riemann",
+                        "curve": "block_2",
+                        "x_range": [
+                            -3.1415,
+                            3.1415
+                        ],
+                        "width": "0.5",
+                        "use_axes": true,
+                        "chooseType": [
+                            "basic",
+                            "Riemann"
+                        ],
+                        "necessary": [
+                            "curve",
+                            "x_range",
+                            "width"
+                        ],
+                        "lastType": [
+                            "basic",
+                            "Riemann"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "block_6",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1447,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1447,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "block_6",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_6",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_6",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 1,
+                        "start_time": 3,
+                        "rate_func": "linear",
+                        "chooseType": [
+                            "Create"
+                        ],
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ],
+                        "lastType": [
+                            "Create"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1397,
+            "sourceY": 332.5,
+            "targetX": 1447,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-block_3output-block_7input",
+            "type": "default",
+            "source": "block_3",
+            "target": "block_7",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "block_3",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1120,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1120,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_3",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_3",
+                    "params": {
+                        "type": "Riemann",
+                        "curve": "block_2",
+                        "x_range": [
+                            -3.1415,
+                            3.1415
+                        ],
+                        "width": "0.5",
+                        "use_axes": true,
+                        "chooseType": [
+                            "basic",
+                            "Riemann"
+                        ],
+                        "necessary": [
+                            "curve",
+                            "x_range",
+                            "width"
+                        ],
+                        "lastType": [
+                            "basic",
+                            "Riemann"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "block_7",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1447,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1447,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "block_7",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "input_target",
+                            "position": "left",
+                            "nodeId": "block_7",
+                            "type": "source",
+                            "x": -3,
+                            "y": 176.66666666666666,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_7",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_7",
+                    "params": {
+                        "type": "ReplacementTransform",
+                        "run_time": 1,
+                        "start_time": 5,
+                        "target_object": "block_4",
+                        "rate_func": "linear",
+                        "chooseType": [
+                            "ReplacementTransform"
+                        ],
+                        "necessary": [
+                            "target_object",
+                            "run_time",
+                            "start_time"
+                        ],
+                        "lastType": [
+                            "ReplacementTransform"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1397,
+            "sourceY": 332.5,
+            "targetX": 1447,
+            "targetY": 682.5
+        },
+        {
+            "id": "vueflow__edge-block_4output-block_8input",
+            "type": "default",
+            "source": "block_4",
+            "target": "block_8",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "block_4",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1120,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1120,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_4",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_4",
+                    "params": {
+                        "type": "Riemann",
+                        "curve": "block_2",
+                        "x_range": [
+                            -3.1415,
+                            3.1415
+                        ],
+                        "width": 0.1,
+                        "use_axes": true,
+                        "chooseType": [
+                            "basic",
+                            "Riemann"
+                        ],
+                        "necessary": [
+                            "curve",
+                            "x_range",
+                            "width"
+                        ],
+                        "lastType": [
+                            "basic",
+                            "Riemann"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "block_8",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 947,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 947,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "block_8",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "input_target",
+                            "position": "left",
+                            "nodeId": "block_8",
+                            "type": "source",
+                            "x": -3,
+                            "y": 176.66666666666666,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_8",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_8",
+                    "params": {
+                        "type": "ReplacementTransform",
+                        "run_time": 1,
+                        "start_time": 7,
+                        "target_object": "block_5",
+                        "rate_func": "linear",
+                        "chooseType": [
+                            "ReplacementTransform"
+                        ],
+                        "necessary": [
+                            "target_object",
+                            "run_time",
+                            "start_time"
+                        ],
+                        "lastType": [
+                            "ReplacementTransform"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1397,
+            "sourceY": 732.5,
+            "targetX": 947,
+            "targetY": 682.5
+        },
+        {
+            "id": "vueflow__edge-block_2output-block_1input",
+            "type": "default",
+            "source": "block_2",
+            "target": "block_1",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "block_2",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 620,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 620,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_2",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_2",
+                    "params": {
+                        "type": "Graph",
+                        "function": "2*sin(x)",
+                        "x_range": [
+                            -3.1415,
+                            3.1415
+                        ],
+                        "color": "WHITE",
+                        "stroke_width": 2,
+                        "use_axes": true,
+                        "chooseType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "necessary": [
+                            "function",
+                            "x_range",
+                            "use_axes"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Graph"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "block_1",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 947,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 947,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "block_1",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_1",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_1",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 1,
+                        "start_time": 1,
+                        "rate_func": "linear",
+                        "chooseType": [
+                            "Create"
+                        ],
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ],
+                        "lastType": [
+                            "Create"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 897,
+            "sourceY": 332.5,
+            "targetX": 947,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-axisoutput-block_1input",
+            "type": "default",
+            "source": "axis",
+            "target": "block_1",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "axis",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 0
+                },
+                "position": {
+                    "x": 100,
+                    "y": 100
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "axis",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node axis",
+                    "params": {
+                        "type": "Axes",
+                        "x_range": [
+                            -4,
+                            4,
+                            1
+                        ],
+                        "y_range": [
+                            -4,
+                            4,
+                            1
+                        ],
+                        "axis_config": {
+                            "include_numbers": true,
+                            "font_size": 24,
+                            "color": "WHITE"
+                        },
+                        "z_range": [],
+                        "chooseType": [
+                            "axis",
+                            "Axes"
+                        ],
+                        "necessary": [
+                            "x_range",
+                            "y_range"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "block_1",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 947,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 947,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "block_1",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_1",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_1",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 1,
+                        "start_time": 1,
+                        "rate_func": "linear",
+                        "chooseType": [
+                            "Create"
+                        ],
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ],
+                        "lastType": [
+                            "Create"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 377,
+            "sourceY": 282.5,
+            "targetX": 947,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-block_10output-block_11input",
+            "type": "default",
+            "source": "block_10",
+            "target": "block_11",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "block_10",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 120,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 120,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_10",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_10",
+                    "params": {
+                        "type": "MathTex",
+                        "formula": "f(x)=sin(x)",
+                        "position": [
+                            3,
+                            -1,
+                            0
+                        ],
+                        "font_size": 24,
+                        "color": "WHITE",
+                        "use_axes": true,
+                        "chooseType": [
+                            "text",
+                            "MathTex"
+                        ],
+                        "necessary": [
+                            "formula",
+                            "use_axes"
+                        ],
+                        "lastType": [
+                            "text",
+                            "MathTex"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "block_11",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 447,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 447,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "block_11",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_11",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_11",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 1,
+                        "start_time": "1",
+                        "rate_func": "linear",
+                        "chooseType": [
+                            "Create"
+                        ],
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ],
+                        "lastType": [
+                            "Create"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 397,
+            "sourceY": 732.5,
+            "targetX": 447,
+            "targetY": 682.5
+        },
+        {
+            "id": "vueflow__edge-block_12output-block_14input",
+            "type": "default",
+            "source": "block_12",
+            "target": "block_14",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "block_12",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 120,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 120,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_12",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_12",
+                    "params": {
+                        "type": "MathTex",
+                        "formula": "\\int_{-\\pi}^{\\pi} 2\\sin(x) \\, dx = 0",
+                        "position": [
+                            -3,
+                            3,
+                            0
+                        ],
+                        "font_size": 24,
+                        "color": "WHITE",
+                        "use_axes": true,
+                        "chooseType": [
+                            "text",
+                            "MathTex"
+                        ],
+                        "necessary": [
+                            "formula",
+                            "use_axes"
+                        ],
+                        "lastType": [
+                            "text",
+                            "MathTex"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "block_14",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 447,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 447,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "block_14",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "block_14",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node block_14",
+                    "params": {
+                        "type": "Create",
+                        "run_time": "3",
+                        "start_time": "2",
+                        "rate_func": "linear",
+                        "chooseType": [
+                            "Create"
+                        ],
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ],
+                        "lastType": [
+                            "Create"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 397,
+            "sourceY": 1132.5,
+            "targetX": 447,
+            "targetY": 1082.5
+        }
+    ]
+}

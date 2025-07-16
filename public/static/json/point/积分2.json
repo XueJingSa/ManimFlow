@@ -1,0 +1,411 @@
+{
+    "videoSource": "/static/video/积分2.mp4",
+    "name": "积分演示",
+    "nodes": [
+        {
+            "id": "axis",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Axes",
+                    "x_range": [
+                        -4,
+                        4,
+                        1
+                    ],
+                    "y_range": [
+                        -4,
+                        4,
+                        1
+                    ],
+                    "z_range": [],
+                    "axis_config": {
+                        "include_numbers": true,
+                        "font_size": 24,
+                        "color": "WHITE"
+                    },
+                    "chooseType": [
+                        "axis",
+                        "Axes"
+                    ],
+                    "necessary": [
+                        "x_range",
+                        "y_range"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_1_1",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 1,
+                    "start_time": 1,
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_1_2",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 1,
+                    "start_time": 1,
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_2",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Graph",
+                    "function": "2*sin(x)",
+                    "x_range": [
+                        -3.1415,
+                        3.1415
+                    ],
+                    "color": "WHITE",
+                    "stroke_width": 2,
+                    "use_axes": true,
+                    "chooseType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "necessary": [
+                        "function",
+                        "x_range",
+                        "use_axes"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Graph"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_3",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Riemann",
+                    "curve": "block_2",
+                    "x_range": [
+                        -3.1415,
+                        3.1415
+                    ],
+                    "width": "0.5",
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Riemann"
+                    ],
+                    "necessary": [
+                        "curve",
+                        "x_range",
+                        "width"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Riemann"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_4",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Riemann",
+                    "curve": "block_2",
+                    "x_range": [
+                        -3.1415,
+                        3.1415
+                    ],
+                    "width": 0.1,
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Riemann"
+                    ],
+                    "necessary": [
+                        "curve",
+                        "x_range",
+                        "width"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Riemann"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_5",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Riemann",
+                    "curve": "block_2",
+                    "x_range": [
+                        -3.1415,
+                        3.1415
+                    ],
+                    "width": "0.01",
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Riemann"
+                    ],
+                    "necessary": [
+                        "curve",
+                        "x_range",
+                        "width"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Riemann"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_6",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 1,
+                    "start_time": 3,
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_7",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "ReplacementTransform",
+                    "target_object": "block_4",
+                    "rate_func": "linear",
+                    "run_time": 1,
+                    "start_time": 5,
+                    "chooseType": [
+                        "ReplacementTransform"
+                    ],
+                    "necessary": [
+                        "target_object",
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "ReplacementTransform"
+                    ]
+                }
+            },
+            "target_object": "block_4"
+        },
+        {
+            "id": "block_8",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "ReplacementTransform",
+                    "target_object": "block_5",
+                    "rate_func": "linear",
+                    "run_time": 1,
+                    "start_time": 7,
+                    "chooseType": [
+                        "ReplacementTransform"
+                    ],
+                    "necessary": [
+                        "target_object",
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "ReplacementTransform"
+                    ]
+                }
+            },
+            "target_object": "block_5"
+        },
+        {
+            "id": "block_10",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "MathTex",
+                    "formula": "f(x)=sin(x)",
+                    "position": [
+                        3,
+                        -1,
+                        0
+                    ],
+                    "font_size": 24,
+                    "color": "WHITE",
+                    "use_axes": true,
+                    "chooseType": [
+                        "text",
+                        "MathTex"
+                    ],
+                    "necessary": [
+                        "formula",
+                        "use_axes"
+                    ],
+                    "lastType": [
+                        "text",
+                        "MathTex"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_11",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 1,
+                    "start_time": "1",
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_12",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "MathTex",
+                    "formula": "\\int_{-\\pi}^{\\pi} 2\\sin(x) \\, dx = 0",
+                    "position": [
+                        -3,
+                        3,
+                        0
+                    ],
+                    "font_size": 24,
+                    "color": "WHITE",
+                    "use_axes": true,
+                    "chooseType": [
+                        "text",
+                        "MathTex"
+                    ],
+                    "necessary": [
+                        "formula",
+                        "use_axes"
+                    ],
+                    "lastType": [
+                        "text",
+                        "MathTex"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "block_14",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": "3",
+                    "start_time": "2",
+                    "chooseType": [
+                        "Create"
+                    ],
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ],
+                    "lastType": [
+                        "Create"
+                    ]
+                }
+            }
+        }
+    ],
+    "edges": [
+        {
+            "source": "block_2",
+            "target": "block_1_2"
+        },
+        {
+            "source": "axis",
+            "target": "block_1_1"
+        },
+        {
+            "source": "block_3",
+            "target": "block_6"
+        },
+        {
+            "source": "block_6",
+            "target": "block_7"
+        },
+
+        {
+            "source": "block_4",
+            "target": "block_8"
+        },
+        {
+            "source": "block_10",
+            "target": "block_11"
+        },
+        {
+            "source": "block_12",
+            "target": "block_14"
+        }
+    ]
+}

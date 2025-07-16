@@ -1,0 +1,578 @@
+{
+    "videoSource": "/static/video/高阶导数.mp4",
+    "name": "高阶导数",
+    "nodes": [
+        {
+            "id": "axis",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Axes",
+                    "x_range": "[-0.5, 12.3, 1]",
+                    "y_range": "[-2.5, 2.7, 1]",
+                    "axis_config": {
+                        "include_numbers": true,
+                        "font_size": 24,
+                        "color": "WHITE"
+                    }
+                }
+            }
+        },
+        {
+            "id": "func_1",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Graph",
+                    "function": "0.0003 * x ** 5 - 0.012 * x ** 4 + 0.164 * x ** 3 - 0.931 * x ** 2 + 2.045 * x",
+                    "x_range": "[-0.5, 12.3]",
+                    "color": "WHITE",
+                    "use_axes": "true"
+                }
+            }
+        },
+        {
+            "id": "func_2",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Graph",
+                    "function": "0.0015 * x ** 4 - 0.048 * x ** 3 + 0.492 * x ** 2 - 1.862 * x + 2.045",
+                    "x_range": "[-0.5, 12.3]",
+                    "color": "YELLOW",
+                    "use_axes": "true"
+                }
+            }
+        },
+        {
+            "id": "func_3",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Graph",
+                    "function": "0.006 * x ** 3 - 0.144 * x ** 2 + 0.984 * x - 1.862",
+                    "x_range": "[-0.5, 12.3]",
+                    "color": "RED",
+                    "use_axes": "true"
+                }
+            }
+        },
+        {
+            "id": "line_1",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "DashedLine",
+                    "start": [
+                        1.84562,
+                        -3
+                    ],
+                    "end": [
+                        1.84562,
+                        3
+                    ],
+                    "color": "WHITE",
+                    "stroke_width": 2
+                }
+            }
+        },
+        {
+            "id": "line_2",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "DashedLine",
+                    "start": [
+                        5.13267,
+                        -3
+                    ],
+                    "end": [
+                        5.13267,
+                        3
+                    ],
+                    "color": "WHITE",
+                    "stroke_width": 2
+                }
+            }
+        },
+        {
+            "id": "line_3",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "DashedLine",
+                    "start": [
+                        8.96076,
+                        -3
+                    ],
+                    "end": [
+                        8.96076,
+                        3
+                    ],
+                    "color": "WHITE",
+                    "stroke_width": 2
+                }
+            }
+        },
+        {
+            "id": "create_basic",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 2,
+                    "start_time": 0.1
+                }
+            }
+        },
+        {
+            "id": "create_func_3",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 2,
+                    "start_time": 8
+                }
+            }
+        },
+        {
+            "id": "create_line",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 2,
+                    "start_time": 3
+                }
+            }
+        },
+        {
+            "id": "text1",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Text",
+                    "content": "f(x)",
+                    "position": "[5.5, 1.2, 0]",
+                    "font_size": 24,
+                    "color": "WHITE",
+                    "use_axes": true
+                }
+            }
+        },
+        {
+            "id": "text2",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Text",
+                    "content": "f'(x)",
+                    "position": "[5.5, 0.5, 0]",
+                    "font_size": 24,
+                    "color": "YELLOW",
+                    "use_axes": true
+                }
+            }
+        },
+        {
+            "id": "text3",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Text",
+                    "content": "f''(x)",
+                    "position": "[5.5, -0.2, 0]",
+                    "font_size": 24,
+                    "color": "RED",
+                    "use_axes": true
+                }
+            }
+        },
+        {
+            "id": "create_text",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 2,
+                    "start_time": 3
+                }
+            }
+        },
+        {
+            "id": "Point_1",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        1.84562,
+                        0
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "Point_2",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        1.84562,
+                        1.50
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "Point_3",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        5.13267,
+                        0
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "Point_4",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        5.13267,
+                        0.89
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "Point_5",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        8.96076,
+                        0
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "Point_6",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        8.96076,
+                        1.53
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "create_point",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 2,
+                    "start_time": 4
+                }
+            }
+        },
+        {
+            "id": "fadeout",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "FadeOut",
+                    "rate_func": "linear",
+                    "run_time": 2,
+                    "start_time": 6
+                }
+            }
+        },
+        {
+            "id": "line_4",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "DashedLine",
+                    "start": [
+                        3.16458,
+                        -3
+                    ],
+                    "end": [
+                        3.16458,
+                        3
+                    ],
+                    "color": "WHITE",
+                    "stroke_width": 2
+                }
+            }
+        },
+        {
+            "id": "line_5",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "DashedLine",
+                    "start": [
+                        7.1829,
+                        -3
+                    ],
+                    "end": [
+                        7.1829,
+                        3
+                    ],
+                    "color": "WHITE",
+                    "stroke_width": 2
+                }
+            }
+        },
+        {
+            "id": "create_line_45",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 2,
+                    "start_time": 10
+                }
+            }
+        },
+        {
+            "id": "Point_7",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        3.16458,
+                        0
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "Point_8",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        3.16458,
+                        -0.29
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "Point_9",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        7.1829,
+                        0
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "Point_10",
+            "blockType": "generate",
+            "data": {
+                "params": {
+                    "type": "Point",
+                    "position": [
+                        7.1829,
+                        0.25
+                    ],
+                    "color": "WHITE",
+                    "size": 0.1
+                }
+            }
+        },
+        {
+            "id": "create_point_2",
+            "blockType": "animation",
+            "data": {
+                "params": {
+                    "type": "Create",
+                    "rate_func": "linear",
+                    "run_time": 2,
+                    "start_time": 12
+                }
+            }
+        }
+    ],
+    "edges": [
+        {
+            "source": "axis",
+            "target": "create_basic"
+        },
+        {
+            "source": "func_1",
+            "target": "create_basic"
+        },
+        {
+            "source": "func_2",
+            "target": "create_basic"
+        },
+        {
+            "source": "line_1",
+            "target": "create_line"
+        },
+        {
+            "source": "line_2",
+            "target": "create_line"
+        },
+        {
+            "source": "line_3",
+            "target": "create_line"
+        },
+        {
+            "source": "text1",
+            "target": "create_text"
+        },
+        {
+            "source": "text2",
+            "target": "create_text"
+        },
+        {
+            "source": "Point_1",
+            "target": "create_point"
+        },
+        {
+            "source": "Point_2",
+            "target": "create_point"
+        },
+        {
+            "source": "Point_3",
+            "target": "create_point"
+        },
+        {
+            "source": "Point_4",
+            "target": "create_point"
+        },
+        {
+            "source": "Point_5",
+            "target": "create_point"
+        },
+        {
+            "source": "Point_6",
+            "target": "create_point"
+        },
+        {
+            "source": "func_1",
+            "target": "fadeout"
+        },
+        {
+            "source": "line_1",
+            "target": "fadeout"
+        },
+        {
+            "source": "line_2",
+            "target": "fadeout"
+        },
+        {
+            "source": "line_3",
+            "target": "fadeout"
+        },
+        {
+            "source": "text1",
+            "target": "fadeout"
+        },
+        {
+            "source": "Point_1",
+            "target": "fadeout"
+        },
+        {
+            "source": "Point_2",
+            "target": "fadeout"
+        },
+        {
+            "source": "Point_3",
+            "target": "fadeout"
+        },
+        {
+            "source": "Point_4",
+            "target": "fadeout"
+        },
+        {
+            "source": "Point_5",
+            "target": "fadeout"
+        },
+        {
+            "source": "Point_6",
+            "target": "fadeout"
+        },
+        {
+            "source": "func_3",
+            "target": "create_func_3"
+        },
+        {
+            "source": "text3",
+            "target": "create_func_3"
+        },
+        {
+            "source": "line_4",
+            "target": "create_line_45"
+        },
+        {
+            "source": "line_5",
+            "target": "create_line_45"
+        },
+        {
+            "source": "Point_7",
+            "target": "create_point_2"
+        },
+        {
+            "source": "Point_8",
+            "target": "create_point_2"
+        },
+        {
+            "source": "Point_9",
+            "target": "create_point_2"
+        },
+        {
+            "source": "Point_10",
+            "target": "create_point_2"
+        }
+    ]
+}

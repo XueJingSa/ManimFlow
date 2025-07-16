@@ -1,0 +1,77 @@
+Date : 2025-04-25 11:13:50
+Directory : e:\FengRuCup\Manim_Fronted
+Total : 32 files,  42752 codes, 430 comments, 634 blanks, all 43816 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |         11 |     37,218 |          0 |          2 |     37,220 |
+| Vue                |          7 |      4,660 |        421 |        404 |      5,485 |
+| Markdown           |          2 |        569 |          0 |        171 |        740 |
+| JavaScript         |          7 |        182 |          7 |         34 |        223 |
+| CSS                |          2 |        101 |          2 |         20 |        123 |
+| Django HTML        |          1 |         13 |          0 |          1 |         14 |
+| JSON with Comments |          1 |          8 |          0 |          1 |          9 |
+| XML                |          1 |          1 |          0 |          1 |          2 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                              | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                 |         32 |     42,752 |        430 |        634 |     43,816 |
+| . (Files)                                                         |          7 |      7,193 |          2 |        178 |      7,373 |
+| public                                                            |          9 |     30,633 |          0 |          0 |     30,633 |
+| public\static                                                     |          9 |     30,633 |          0 |          0 |     30,633 |
+| public\static\json                                                |          9 |     30,633 |          0 |          0 |     30,633 |
+| public\static\json\limit                                          |          5 |     18,778 |          0 |          0 |     18,778 |
+| public\static\json\point                                          |          4 |     11,855 |          0 |          0 |     11,855 |
+| src                                                               |         16 |      4,926 |        428 |        456 |      5,810 |
+| src (Files)                                                       |          2 |         30 |          2 |         10 |         42 |
+| src\api                                                           |          3 |         93 |          1 |         20 |        114 |
+| src\assets                                                        |          3 |        102 |          2 |         21 |        125 |
+| src\components                                                    |          4 |        813 |         44 |         58 |        915 |
+| src\router                                                        |          1 |         18 |          0 |          3 |         21 |
+| src\store                                                         |          1 |         30 |          2 |          2 |         34 |
+| src\views                                                         |          2 |      3,840 |        377 |        342 |      4,559 |
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                          | language           | code       | comment    | blank      | total      |
++-------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| e:\FengRuCup\Manim_Fronted\README.md                              | Markdown           |         18 |          0 |         12 |         30 |
+| e:\FengRuCup\Manim_Fronted\index.html                             | Django HTML        |         13 |          0 |          1 |         14 |
+| e:\FengRuCup\Manim_Fronted\jsconfig.json                          | JSON with Comments |          8 |          0 |          1 |          9 |
+| e:\FengRuCup\Manim_Fronted\package-lock.json                      | JSON               |      6,553 |          0 |          1 |      6,554 |
+| e:\FengRuCup\Manim_Fronted\package.json                           | JSON               |         32 |          0 |          1 |         33 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\limit\fileList.json | JSON               |          6 |          0 |          0 |          6 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\limit\微分方程完整版.json  | JSON               |      2,055 |          0 |          0 |      2,055 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\limit\极限演示1完整版.json | JSON               |      5,049 |          0 |          0 |      5,049 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\limit\极限演示2完整版.json | JSON               |      8,078 |          0 |          0 |      8,078 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\limit\泰勒展开完整版.json  | JSON               |      3,590 |          0 |          0 |      3,590 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\point\fileList.json | JSON               |          5 |          0 |          0 |          5 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\point\积分1完整版.json   | JSON               |      2,942 |          0 |          0 |      2,942 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\point\积分2完整版.json   | JSON               |      2,019 |          0 |          0 |      2,019 |
+| e:\FengRuCup\Manim_Fronted\public\static\json\point\高阶导数完整版.json  | JSON               |      6,889 |          0 |          0 |      6,889 |
+| e:\FengRuCup\Manim_Fronted\src\App.vue                            | Vue                |          7 |          0 |          4 |         11 |
+| e:\FengRuCup\Manim_Fronted\src\api\ai.js                          | JavaScript         |         19 |          0 |          6 |         25 |
+| e:\FengRuCup\Manim_Fronted\src\api\api.js                         | JavaScript         |         52 |          1 |          5 |         58 |
+| e:\FengRuCup\Manim_Fronted\src\api\main.js                        | JavaScript         |         22 |          0 |          9 |         31 |
+| e:\FengRuCup\Manim_Fronted\src\assets\base.css                    | CSS                |         71 |          2 |         14 |         87 |
+| e:\FengRuCup\Manim_Fronted\src\assets\logo.svg                    | XML                |          1 |          0 |          1 |          2 |
+| e:\FengRuCup\Manim_Fronted\src\assets\main.css                    | CSS                |         30 |          0 |          6 |         36 |
+| e:\FengRuCup\Manim_Fronted\src\components\AnimationNode.vue       | Vue                |        297 |         16 |         21 |        334 |
+| e:\FengRuCup\Manim_Fronted\src\components\FunctionNode.vue        | Vue                |         93 |          6 |         10 |        109 |
+| e:\FengRuCup\Manim_Fronted\src\components\GenerateNode.vue        | Vue                |        394 |         22 |         22 |        438 |
+| e:\FengRuCup\Manim_Fronted\src\components\NavigationBar.vue       | Vue                |         29 |          0 |          5 |         34 |
+| e:\FengRuCup\Manim_Fronted\src\main.js                            | JavaScript         |         23 |          2 |          6 |         31 |
+| e:\FengRuCup\Manim_Fronted\src\router\index.js                    | JavaScript         |         18 |          0 |          3 |         21 |
+| e:\FengRuCup\Manim_Fronted\src\store\index.js                     | JavaScript         |         30 |          2 |          2 |         34 |
+| e:\FengRuCup\Manim_Fronted\src\views\AI.vue                       | Vue                |        702 |         13 |         93 |        808 |
+| e:\FengRuCup\Manim_Fronted\src\views\Main.vue                     | Vue                |      3,138 |        364 |        249 |      3,751 |
+| e:\FengRuCup\Manim_Fronted\vite.config.js                         | JavaScript         |         18 |          2 |          3 |         23 |
+| e:\FengRuCup\Manim_Fronted\产品文档.md                                | Markdown           |        551 |          0 |        159 |        710 |
+| Total                                                             |                    |     42,752 |        430 |        634 |     43,816 |
++-------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

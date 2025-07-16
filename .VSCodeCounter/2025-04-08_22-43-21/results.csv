@@ -1,0 +1,34 @@
+"filename", "language", "JavaScript", "JSON with Comments", "JSON", "Django HTML", "Markdown", "Vue", "CSS", "XML", "comment", "blank", "total"
+"e:\FengRuCup\Manim_Fronted\README.md", "Markdown", 0, 0, 0, 0, 18, 0, 0, 0, 0, 12, 30
+"e:\FengRuCup\Manim_Fronted\index.html", "Django HTML", 0, 0, 0, 13, 0, 0, 0, 0, 0, 1, 14
+"e:\FengRuCup\Manim_Fronted\jsconfig.json", "JSON with Comments", 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"e:\FengRuCup\Manim_Fronted\package-lock.json", "JSON", 0, 0, 6516, 0, 0, 0, 0, 0, 0, 1, 6517
+"e:\FengRuCup\Manim_Fronted\package.json", "JSON", 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 32
+"e:\FengRuCup\Manim_Fronted\public\static\json\limit\fileList.json", "JSON", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6
+"e:\FengRuCup\Manim_Fronted\public\static\json\limit\微分方程完整版.json", "JSON", 0, 0, 2055, 0, 0, 0, 0, 0, 0, 0, 2055
+"e:\FengRuCup\Manim_Fronted\public\static\json\limit\极限演示1完整版.json", "JSON", 0, 0, 5049, 0, 0, 0, 0, 0, 0, 0, 5049
+"e:\FengRuCup\Manim_Fronted\public\static\json\limit\极限演示2完整版.json", "JSON", 0, 0, 8078, 0, 0, 0, 0, 0, 0, 0, 8078
+"e:\FengRuCup\Manim_Fronted\public\static\json\limit\泰勒展开完整版.json", "JSON", 0, 0, 3590, 0, 0, 0, 0, 0, 0, 0, 3590
+"e:\FengRuCup\Manim_Fronted\public\static\json\point\fileList.json", "JSON", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 5
+"e:\FengRuCup\Manim_Fronted\public\static\json\point\积分1完整版.json", "JSON", 0, 0, 2942, 0, 0, 0, 0, 0, 0, 0, 2942
+"e:\FengRuCup\Manim_Fronted\public\static\json\point\积分2完整版.json", "JSON", 0, 0, 2019, 0, 0, 0, 0, 0, 0, 0, 2019
+"e:\FengRuCup\Manim_Fronted\public\static\json\point\高阶导数完整版.json", "JSON", 0, 0, 6889, 0, 0, 0, 0, 0, 0, 0, 6889
+"e:\FengRuCup\Manim_Fronted\src\App.vue", "Vue", 0, 0, 0, 0, 0, 7, 0, 0, 0, 4, 11
+"e:\FengRuCup\Manim_Fronted\src\api\ai.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 6, 25
+"e:\FengRuCup\Manim_Fronted\src\api\api.js", "JavaScript", 52, 0, 0, 0, 0, 0, 0, 0, 1, 5, 58
+"e:\FengRuCup\Manim_Fronted\src\api\main.js", "JavaScript", 22, 0, 0, 0, 0, 0, 0, 0, 0, 9, 31
+"e:\FengRuCup\Manim_Fronted\src\assets\base.css", "CSS", 0, 0, 0, 0, 0, 0, 71, 0, 2, 14, 87
+"e:\FengRuCup\Manim_Fronted\src\assets\logo.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 2
+"e:\FengRuCup\Manim_Fronted\src\assets\main.css", "CSS", 0, 0, 0, 0, 0, 0, 30, 0, 0, 6, 36
+"e:\FengRuCup\Manim_Fronted\src\components\AnimationNode.vue", "Vue", 0, 0, 0, 0, 0, 297, 0, 0, 16, 21, 334
+"e:\FengRuCup\Manim_Fronted\src\components\FunctionNode.vue", "Vue", 0, 0, 0, 0, 0, 93, 0, 0, 6, 10, 109
+"e:\FengRuCup\Manim_Fronted\src\components\GenerateNode.vue", "Vue", 0, 0, 0, 0, 0, 394, 0, 0, 22, 22, 438
+"e:\FengRuCup\Manim_Fronted\src\components\NavigationBar.vue", "Vue", 0, 0, 0, 0, 0, 29, 0, 0, 0, 5, 34
+"e:\FengRuCup\Manim_Fronted\src\main.js", "JavaScript", 23, 0, 0, 0, 0, 0, 0, 0, 2, 6, 31
+"e:\FengRuCup\Manim_Fronted\src\router\index.js", "JavaScript", 18, 0, 0, 0, 0, 0, 0, 0, 0, 3, 21
+"e:\FengRuCup\Manim_Fronted\src\store\index.js", "JavaScript", 30, 0, 0, 0, 0, 0, 0, 0, 2, 2, 34
+"e:\FengRuCup\Manim_Fronted\src\views\AI.vue", "Vue", 0, 0, 0, 0, 0, 579, 0, 0, 15, 60, 654
+"e:\FengRuCup\Manim_Fronted\src\views\Main.vue", "Vue", 0, 0, 0, 0, 0, 3017, 0, 0, 324, 239, 3580
+"e:\FengRuCup\Manim_Fronted\vite.config.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 0, 1, 3, 23
+"e:\FengRuCup\Manim_Fronted\产品文档.md", "Markdown", 0, 0, 0, 0, 551, 0, 0, 0, 0, 159, 710
+"Total", "-", 183, 8, 37180, 13, 569, 4416, 101, 1, 391, 591, 43453

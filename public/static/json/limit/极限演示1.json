@@ -1,0 +1,546 @@
+{
+  "projectName": "project_name",
+  "videoSource": "/static/video/极限演示1.mp4",
+  "name": "极限演示",
+  "nodes": [
+    {
+      "id": "axis",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Axes",
+          "x_range": "[-6, 6, 1]",
+          "y_range": "[-1, 8, 1]",
+          "axis_config": {
+            "include_numbers": true,
+            "font_size": 24,
+            "color": "WHITE"
+          }
+        }
+      }
+    },
+    {
+      "id": "func_graph_xx",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Graph",
+          "function": "x**2",
+          "x_range": "[-4.5, 4.5]",
+          "color": "WHITE",
+          "stroke_width": 2,
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "line_basic",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Graph",
+          "function": "4",
+          "x_range": "[-5, 5]",
+          "stroke_width": 2,
+          "color": "WHITE",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "line_high",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "stroke_width": 2,
+          "type": "Graph",
+          "function": "6",
+          "x_range": "[-5, 5]",
+          "color": "GREEN",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "line_low",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Graph",
+          "function": "2",
+          "x_range": "[-5, 5]",
+          "color": "GREEN",
+          "stroke_width": 2,
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "brace_high1",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Brace",
+          "left_bracket_position": "[2.44948974278, 4, 0]",
+          "right_bracket_position": "[2.44948974278, 6, 0]",
+          "color": "WHITE",
+          "stroke_width": "2",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "brace_high2",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Brace",
+          "left_bracket_position": "[2.2360679775, 4, 0]",
+          "right_bracket_position": "[2.2360679775, 5, 0]",
+          "color": "WHITE",
+          "stroke_width": "2",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "brace_low1",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Brace",
+          "left_bracket_position": "[2.44948974278, 2, 0]",
+          "right_bracket_position": "[2.44948974278, 4, 0]",
+          "color": "WHITE",
+          "stroke_width": "2",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "brace_low2",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Brace",
+          "left_bracket_position": "[2.2360679775, 3, 0]",
+          "right_bracket_position": "[2.2360679775, 4, 0]",
+          "color": "WHITE",
+          "stroke_width": "2",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "create_basic1",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 0.1
+        }
+      }
+    },
+     {
+      "id": "create_basic2",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 0.1
+        }
+      }
+    },
+     {
+      "id": "create_basic3",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 0.1
+        }
+      }
+    },
+    {
+      "id": "create_e_line1",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 3
+        }
+      }
+    },
+    {
+      "id": "create_e_line2",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 3
+        }
+      }
+    },
+    {
+      "id": "create_brace11",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 3
+        }
+      }
+    },
+    {
+      "id": "create_brace12",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 3
+        }
+      }
+    },
+    {
+      "id": "Transform_brace_high",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "ReplacementTransform",
+          "target_object": "brace_high2",
+          "rate_func": "linear",
+          "run_time": 1.3,
+          "start_time": 6
+        }
+      }
+    },
+    {
+      "id": "Transform_brace_low",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "ReplacementTransform",
+          "target_object": "brace_low2",
+          "rate_func": "linear",
+          "run_time": 1.3,
+          "start_time": 6
+        }
+      }
+    },
+    {
+      "id": "move_e_line_high",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "MoveTo",
+          "target": "[0, 5, 0]",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 6,
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "move_e_line_low",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "MoveTo",
+          "target": "[0, 3, 0]",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 6,
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "fadeout_brace1",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "FadeOut",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 9
+        }
+      }
+    },
+    {
+      "id": "fadeout_brace2",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "FadeOut",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 9
+        }
+      }
+    },
+    {
+      "id": "move_e_line_mid1",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "MoveTo",
+          "target": "[0, 4, 0]",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 9,
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "move_e_line_mid2",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "MoveTo",
+          "target": "[0, 4, 0]",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 9,
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "text1",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Text",
+          "content": "e",
+          "position": "[3.1, 5, 0]",
+          "font_size": 24,
+          "color": "WHITE",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "text2",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Text",
+          "content": "e",
+          "position": "[3.1, 3, 0]",
+          "font_size": 24,
+          "color": "WHITE",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "create_text11",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 3
+        }
+      }
+    },
+    {
+      "id": "create_text12",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 3
+        }
+      }
+    },
+    {
+      "id": "move_text_high",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "MoveTo",
+          "target": "[3, 4.5, 0]",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 6,
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "move_text_low",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "MoveTo",
+          "target": "[3, 3.5, 0]",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 6,
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "fadeout_text1",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "FadeOut",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 9
+        }
+      }
+    },
+    {
+      "id": "fadeout_text2",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "FadeOut",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 9
+        }
+      }
+    },
+    {
+      "id": "text_final",
+      "blockType": "generate",
+      "data": {
+        "params": {
+          "type": "Text",
+          "content": "e -> 0",
+          "position": "[3, 5, 0]",
+          "font_size": 24,
+          "color": "WHITE",
+          "use_axes": true
+        }
+      }
+    },
+    {
+      "id": "create_text_final",
+      "blockType": "animation",
+      "data": {
+        "params": {
+          "type": "Create",
+          "rate_func": "linear",
+          "run_time": 2,
+          "start_time": 10
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "axis",
+      "target": "create_basic1"
+    },
+    {
+      "source": "func_graph_xx",
+      "target": "create_basic2"
+    },
+    {
+      "source": "line_basic",
+      "target": "create_basic3"
+    },
+    {
+      "source": "line_high",
+      "target": "create_e_line1"
+    },
+    {
+      "source": "create_e_line1",
+      "target": "move_e_line_high"
+    },
+     {
+      "source": "move_e_line_high",
+      "target": "move_e_line_mid1"
+    },
+    {
+      "source": "line_low",
+      "target": "create_e_line2"
+    },
+    {
+      "source": "create_e_line2",
+      "target": "move_e_line_low"
+    },
+    {
+      "source": "move_e_line_low",
+      "target": "move_e_line_mid2"
+    },
+    {
+      "source": "text1",
+      "target": "create_text11"
+    },
+    {
+      "source": "create_text11",
+      "target": "move_text_high"
+    },
+    {
+      "source": "move_text_high",
+      "target": "fadeout_text1"
+    },
+
+    {
+      "source": "text2",
+      "target": "create_text12"
+    },
+    {
+      "source": "create_text12",
+      "target": "move_text_low"
+    },
+    {
+      "source": "move_text_low",
+      "target": "fadeout_text2"
+    },
+    {
+      "source": "text_final",
+      "target": "create_text_final"
+    },
+    {
+      "source": "brace_high1",
+      "target": "create_brace11"
+    },
+    {
+      "source": "create_brace11",
+      "target": "Transform_brace_high"
+    },
+    {
+      "source": "brace_high2",
+      "target": "fadeout_brace1"
+    },    
+    {
+      "source": "brace_low1",
+      "target": "create_brace12"
+    },
+    {
+      "source": "create_brace12",
+      "target": "Transform_brace_low"
+    },
+    {
+      "source": "brace_low2",
+      "target": "fadeout_brace2"
+    }
+  ]
+}

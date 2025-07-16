@@ -1,0 +1,5049 @@
+{
+    "videoSource": "/static/video/极限演示1.mp4",
+    "name": "极限演示1",
+    "nodes": [
+        {
+            "id": "axis",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 100,
+                "y": 100,
+                "z": 0
+            },
+            "position": {
+                "x": 100,
+                "y": 100
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "axis",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node axis",
+                "params": {
+                    "type": "Axes",
+                    "x_range": "[-6, 6, 1]",
+                    "y_range": "[-1, 8, 1]",
+                    "axis_config": {
+                        "include_numbers": true,
+                        "font_size": 24,
+                        "color": "WHITE"
+                    },
+                    "chooseType": [
+                        "axis",
+                        "Axes"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Axes"
+                    ],
+                    "necessary": [
+                        "x_range",
+                        "y_range"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "func_graph_xx",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 620,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 620,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "func_graph_xx",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node func_graph_xx",
+                "params": {
+                    "type": "Graph",
+                    "function": "x**2",
+                    "x_range": "[-4.5, 4.5]",
+                    "color": "WHITE",
+                    "stroke_width": 2,
+                    "use_axes": "true",
+                    "chooseType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "necessary": [
+                        "function",
+                        "x_range",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "line_basic",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 620,
+                "y": 535,
+                "z": 0
+            },
+            "position": {
+                "x": 620,
+                "y": 535
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "line_basic",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node line_basic",
+                "params": {
+                    "type": "Graph",
+                    "function": "4",
+                    "x_range": "[-5, 5]",
+                    "color": "WHITE",
+                    "stroke_width": 2,
+                    "use_axes": "true",
+                    "chooseType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "necessary": [
+                        "function",
+                        "x_range",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "create_basic",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 947,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 947,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "create_basic",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "create_basic",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node create_basic",
+                "params": {
+                    "type": "Create",
+                    "run_time": 2,
+                    "start_time": 0.1,
+                    "rate_func": "linear",
+                    "chooseType": "Create",
+                    "lastType": "Create",
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "line_high",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1120,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 1120,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "line_high",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node line_high",
+                "params": {
+                    "type": "Graph",
+                    "function": "6",
+                    "x_range": "[-5, 5]",
+                    "color": "GREEN",
+                    "stroke_width": 2,
+                    "use_axes": "true",
+                    "chooseType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "necessary": [
+                        "function",
+                        "x_range",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "line_low",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1120,
+                "y": 535,
+                "z": 0
+            },
+            "position": {
+                "x": 1120,
+                "y": 535
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "line_low",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node line_low",
+                "params": {
+                    "type": "Graph",
+                    "function": "2",
+                    "x_range": "[-5, 5]",
+                    "color": "GREEN",
+                    "stroke_width": 2,
+                    "use_axes": "true",
+                    "chooseType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "lastType": [
+                        "axis",
+                        "Graph"
+                    ],
+                    "necessary": [
+                        "function",
+                        "x_range",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "create_e_line",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1447,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 1447,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "create_e_line",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "create_e_line",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node create_e_line",
+                "params": {
+                    "type": "Create",
+                    "run_time": 2,
+                    "start_time": 3,
+                    "rate_func": "linear",
+                    "chooseType": "Create",
+                    "lastType": "Create",
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "brace_high1",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1620,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 1620,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "brace_high1",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node brace_high1",
+                "params": {
+                    "type": "Brace",
+                    "left_bracket_position": "[2.44948974278, 4, 0]",
+                    "right_bracket_position": "[2.44948974278, 6, 0]",
+                    "color": "WHITE",
+                    "stroke_width": "2",
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Brace"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Brace"
+                    ],
+                    "necessary": [
+                        "left_bracket_position",
+                        "right_bracket_position",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "brace_low1",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1620,
+                "y": 535,
+                "z": 0
+            },
+            "position": {
+                "x": 1620,
+                "y": 535
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "brace_low1",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node brace_low1",
+                "params": {
+                    "type": "Brace",
+                    "left_bracket_position": "[2.44948974278, 2, 0]",
+                    "right_bracket_position": "[2.44948974278, 4, 0]",
+                    "color": "WHITE",
+                    "stroke_width": "2",
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Brace"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Brace"
+                    ],
+                    "necessary": [
+                        "left_bracket_position",
+                        "right_bracket_position",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "create_brace1",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1947,
+                "y": 150,
+                "z": 0
+            },
+            "position": {
+                "x": 1947,
+                "y": 150
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "create_brace1",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "create_brace1",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node create_brace1",
+                "params": {
+                    "type": "Create",
+                    "run_time": 2,
+                    "start_time": 3,
+                    "rate_func": "linear",
+                    "chooseType": "Create",
+                    "lastType": "Create",
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "brace_high2",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1620,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 1620,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "brace_high2",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node brace_high2",
+                "params": {
+                    "type": "Brace",
+                    "left_bracket_position": "[2.2360679775, 4, 0]",
+                    "right_bracket_position": "[2.2360679775, 5, 0]",
+                    "color": "WHITE",
+                    "stroke_width": "2",
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Brace"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Brace"
+                    ],
+                    "necessary": [
+                        "left_bracket_position",
+                        "right_bracket_position",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Transform_brace_high",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1947,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 1947,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "Transform_brace_high",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "input_target",
+                        "position": "left",
+                        "nodeId": "Transform_brace_high",
+                        "type": "source",
+                        "x": -3,
+                        "y": 176.66666666666666,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "Transform_brace_high",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node Transform_brace_high",
+                "params": {
+                    "type": "Transform",
+                    "run_time": 1.3,
+                    "start_time": 6,
+                    "target_object": "brace_high2",
+                    "rate_func": "linear",
+                    "chooseType": "Transform",
+                    "lastType": "Transform",
+                    "necessary": [
+                        "target_object",
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "brace_low2",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1120,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 1120,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "brace_low2",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node brace_low2",
+                "params": {
+                    "type": "Brace",
+                    "left_bracket_position": "[2.2360679775, 3, 0]",
+                    "right_bracket_position": "[2.2360679775, 4, 0]",
+                    "color": "WHITE",
+                    "stroke_width": "2",
+                    "use_axes": true,
+                    "chooseType": [
+                        "basic",
+                        "Brace"
+                    ],
+                    "lastType": [
+                        "basic",
+                        "Brace"
+                    ],
+                    "necessary": [
+                        "left_bracket_position",
+                        "right_bracket_position",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "Transform_brace_low",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1447,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 1447,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "Transform_brace_low",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "input_target",
+                        "position": "left",
+                        "nodeId": "Transform_brace_low",
+                        "type": "source",
+                        "x": -3,
+                        "y": 176.66666666666666,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "Transform_brace_low",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node Transform_brace_low",
+                "params": {
+                    "type": "Transform",
+                    "run_time": 1.3,
+                    "start_time": 6,
+                    "target_object": "brace_low2",
+                    "rate_func": "linear",
+                    "chooseType": "Transform",
+                    "lastType": "Transform",
+                    "necessary": [
+                        "target_object",
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "move_e_line_high",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 670,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 670,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "move_e_line_high",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "move_e_line_high",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node move_e_line_high",
+                "params": {
+                    "type": "MoveTo",
+                    "run_time": 2,
+                    "start_time": 6,
+                    "target": "[0, 5, 0]",
+                    "rate_func": "linear",
+                    "use_axes": true,
+                    "chooseType": "MoveTo",
+                    "lastType": "MoveTo",
+                    "necessary": [
+                        "target",
+                        "run_time",
+                        "start_time",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "move_e_line_low",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 170,
+                "y": 550,
+                "z": 0
+            },
+            "position": {
+                "x": 170,
+                "y": 550
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "move_e_line_low",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "move_e_line_low",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node move_e_line_low",
+                "params": {
+                    "type": "MoveTo",
+                    "run_time": 2,
+                    "start_time": 6,
+                    "target": "[0, 3, 0]",
+                    "rate_func": "linear",
+                    "use_axes": true,
+                    "chooseType": "MoveTo",
+                    "lastType": "MoveTo",
+                    "necessary": [
+                        "target",
+                        "run_time",
+                        "start_time",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "text1",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 120,
+                "y": 950,
+                "z": 0
+            },
+            "position": {
+                "x": 120,
+                "y": 950
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "text1",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node text1",
+                "params": {
+                    "type": "Text",
+                    "content": "e",
+                    "position": "[3.1, 5, 0]",
+                    "font_size": 24,
+                    "color": "WHITE",
+                    "use_axes": true,
+                    "chooseType": [
+                        "text",
+                        "Text"
+                    ],
+                    "lastType": [
+                        "text",
+                        "Text"
+                    ],
+                    "necessary": [
+                        "content",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "text2",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 120,
+                "y": 1335,
+                "z": 0
+            },
+            "position": {
+                "x": 120,
+                "y": 1335
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "text2",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node text2",
+                "params": {
+                    "type": "Text",
+                    "content": "e",
+                    "position": "[3.1, 3, 0]",
+                    "font_size": 24,
+                    "color": "WHITE",
+                    "use_axes": true,
+                    "chooseType": [
+                        "text",
+                        "Text"
+                    ],
+                    "lastType": [
+                        "text",
+                        "Text"
+                    ],
+                    "necessary": [
+                        "content",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "create_text1",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 447,
+                "y": 950,
+                "z": 0
+            },
+            "position": {
+                "x": 447,
+                "y": 950
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "create_text1",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "create_text1",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node create_text1",
+                "params": {
+                    "type": "Create",
+                    "run_time": 2,
+                    "start_time": 3,
+                    "rate_func": "linear",
+                    "chooseType": "Create",
+                    "lastType": "Create",
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "move_text_high",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 670,
+                "y": 950,
+                "z": 0
+            },
+            "position": {
+                "x": 670,
+                "y": 950
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "move_text_high",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "move_text_high",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node move_text_high",
+                "params": {
+                    "type": "MoveTo",
+                    "run_time": 2,
+                    "start_time": 6,
+                    "target": "[3, 4.5, 0]",
+                    "rate_func": "linear",
+                    "use_axes": true,
+                    "chooseType": "MoveTo",
+                    "lastType": "MoveTo",
+                    "necessary": [
+                        "target",
+                        "run_time",
+                        "start_time",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "move_text_low",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1170,
+                "y": 950,
+                "z": 0
+            },
+            "position": {
+                "x": 1170,
+                "y": 950
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "move_text_low",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "move_text_low",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node move_text_low",
+                "params": {
+                    "type": "MoveTo",
+                    "run_time": 2,
+                    "start_time": 6,
+                    "target": "[3, 3.5, 0]",
+                    "rate_func": "linear",
+                    "use_axes": true,
+                    "chooseType": "MoveTo",
+                    "lastType": "MoveTo",
+                    "necessary": [
+                        "target",
+                        "run_time",
+                        "start_time",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "text_final",
+            "type": "generate",
+            "blockType": "generate",
+            "dimensions": {
+                "width": 277,
+                "height": 365
+            },
+            "computedPosition": {
+                "x": 1620,
+                "y": 950,
+                "z": 0
+            },
+            "position": {
+                "x": 1620,
+                "y": 950
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "text_final",
+                        "type": "source",
+                        "x": 267,
+                        "y": 182.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node text_final",
+                "params": {
+                    "type": "Text",
+                    "content": "e -> 0",
+                    "position": "[3, 5, 0]",
+                    "font_size": 24,
+                    "color": "WHITE",
+                    "use_axes": true,
+                    "chooseType": [
+                        "text",
+                        "Text"
+                    ],
+                    "lastType": [
+                        "text",
+                        "Text"
+                    ],
+                    "necessary": [
+                        "content",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "create_text_final",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1947,
+                "y": 950,
+                "z": 0
+            },
+            "position": {
+                "x": 1947,
+                "y": 950
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "create_text_final",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "create_text_final",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node create_text_final",
+                "params": {
+                    "type": "Create",
+                    "run_time": 2,
+                    "start_time": 10,
+                    "rate_func": "linear",
+                    "chooseType": "Create",
+                    "lastType": "Create",
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "fadeout_brace",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1620,
+                "y": 1350,
+                "z": 0
+            },
+            "position": {
+                "x": 1620,
+                "y": 1350
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "fadeout_brace",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "fadeout_brace",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node fadeout_brace",
+                "params": {
+                    "type": "FadeOut",
+                    "run_time": 2,
+                    "start_time": 9,
+                    "rate_func": "linear",
+                    "chooseType": "FadeOut",
+                    "lastType": "FadeOut",
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "move_e_line_mid",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 1825,
+                "y": 1350,
+                "z": 0
+            },
+            "position": {
+                "x": 1825,
+                "y": 1350
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "move_e_line_mid",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "move_e_line_mid",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node move_e_line_mid",
+                "params": {
+                    "type": "MoveTo",
+                    "run_time": 2,
+                    "start_time": 9,
+                    "target": "[0, 4, 0]",
+                    "rate_func": "linear",
+                    "use_axes": true,
+                    "chooseType": "MoveTo",
+                    "lastType": "MoveTo",
+                    "necessary": [
+                        "target",
+                        "run_time",
+                        "start_time",
+                        "use_axes"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "fadeout_text",
+            "type": "animation",
+            "blockType": "animation",
+            "dimensions": {
+                "width": 175,
+                "height": 265
+            },
+            "computedPosition": {
+                "x": 2030,
+                "y": 1350,
+                "z": 0
+            },
+            "position": {
+                "x": 2030,
+                "y": 1350
+            },
+            "handleBounds": {
+                "source": [
+                    {
+                        "id": "input",
+                        "position": "left",
+                        "nodeId": "fadeout_text",
+                        "type": "source",
+                        "x": -3,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    },
+                    {
+                        "id": "output",
+                        "position": "right",
+                        "nodeId": "fadeout_text",
+                        "type": "source",
+                        "x": 165,
+                        "y": 132.5,
+                        "width": 8,
+                        "height": 8
+                    }
+                ],
+                "target": []
+            },
+            "selected": false,
+            "dragging": false,
+            "resizing": false,
+            "initialized": false,
+            "isParent": false,
+            "events": {},
+            "data": {
+                "label": "Node fadeout_text",
+                "params": {
+                    "type": "FadeOut",
+                    "run_time": 2,
+                    "start_time": 9,
+                    "rate_func": "linear",
+                    "chooseType": "FadeOut",
+                    "lastType": "FadeOut",
+                    "necessary": [
+                        "run_time",
+                        "start_time"
+                    ]
+                }
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "vueflow__edge-axisoutput-create_basicinput",
+            "type": "default",
+            "source": "axis",
+            "target": "create_basic",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "axis",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 100,
+                    "y": 100,
+                    "z": 0
+                },
+                "position": {
+                    "x": 100,
+                    "y": 100
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "axis",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node axis",
+                    "params": {
+                        "type": "Axes",
+                        "x_range": "[-6, 6, 1]",
+                        "y_range": "[-1, 8, 1]",
+                        "axis_config": {
+                            "include_numbers": true,
+                            "font_size": 24,
+                            "color": "WHITE"
+                        },
+                        "chooseType": [
+                            "axis",
+                            "Axes"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Axes"
+                        ],
+                        "necessary": [
+                            "x_range",
+                            "y_range"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_basic",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 947,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 947,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_basic",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_basic",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_basic",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 0.1,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 377,
+            "sourceY": 282.5,
+            "targetX": 947,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-func_graph_xxoutput-create_basicinput",
+            "type": "default",
+            "source": "func_graph_xx",
+            "target": "create_basic",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "func_graph_xx",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 620,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 620,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "func_graph_xx",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node func_graph_xx",
+                    "params": {
+                        "type": "Graph",
+                        "function": "x**2",
+                        "x_range": "[-4.5, 4.5]",
+                        "color": "WHITE",
+                        "stroke_width": 2,
+                        "use_axes": "true",
+                        "chooseType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "necessary": [
+                            "function",
+                            "x_range",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_basic",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 947,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 947,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_basic",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_basic",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_basic",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 0.1,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 897,
+            "sourceY": 332.5,
+            "targetX": 947,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-line_basicoutput-create_basicinput",
+            "type": "default",
+            "source": "line_basic",
+            "target": "create_basic",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "line_basic",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 620,
+                    "y": 535,
+                    "z": 0
+                },
+                "position": {
+                    "x": 620,
+                    "y": 535
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "line_basic",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node line_basic",
+                    "params": {
+                        "type": "Graph",
+                        "function": "4",
+                        "x_range": "[-5, 5]",
+                        "color": "WHITE",
+                        "stroke_width": 2,
+                        "use_axes": "true",
+                        "chooseType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "necessary": [
+                            "function",
+                            "x_range",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_basic",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 947,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 947,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_basic",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_basic",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_basic",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 0.1,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 897,
+            "sourceY": 717.5,
+            "targetX": 947,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-line_highoutput-create_e_lineinput",
+            "type": "default",
+            "source": "line_high",
+            "target": "create_e_line",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "line_high",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1120,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1120,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "line_high",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node line_high",
+                    "params": {
+                        "type": "Graph",
+                        "function": "6",
+                        "x_range": "[-5, 5]",
+                        "color": "GREEN",
+                        "stroke_width": 2,
+                        "use_axes": "true",
+                        "chooseType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "necessary": [
+                            "function",
+                            "x_range",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_e_line",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1447,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1447,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_e_line",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_e_line",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_e_line",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 3,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1397,
+            "sourceY": 332.5,
+            "targetX": 1447,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-line_lowoutput-create_e_lineinput",
+            "type": "default",
+            "source": "line_low",
+            "target": "create_e_line",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "line_low",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1120,
+                    "y": 535,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1120,
+                    "y": 535
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "line_low",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node line_low",
+                    "params": {
+                        "type": "Graph",
+                        "function": "2",
+                        "x_range": "[-5, 5]",
+                        "color": "GREEN",
+                        "stroke_width": 2,
+                        "use_axes": "true",
+                        "chooseType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "necessary": [
+                            "function",
+                            "x_range",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_e_line",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1447,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1447,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_e_line",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_e_line",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_e_line",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 3,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1397,
+            "sourceY": 717.5,
+            "targetX": 1447,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-brace_high1output-create_brace1input",
+            "type": "default",
+            "source": "brace_high1",
+            "target": "create_brace1",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "brace_high1",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1620,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1620,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "brace_high1",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node brace_high1",
+                    "params": {
+                        "type": "Brace",
+                        "left_bracket_position": "[2.44948974278, 4, 0]",
+                        "right_bracket_position": "[2.44948974278, 6, 0]",
+                        "color": "WHITE",
+                        "stroke_width": "2",
+                        "use_axes": true,
+                        "chooseType": [
+                            "basic",
+                            "Brace"
+                        ],
+                        "lastType": [
+                            "basic",
+                            "Brace"
+                        ],
+                        "necessary": [
+                            "left_bracket_position",
+                            "right_bracket_position",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_brace1",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1947,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1947,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_brace1",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_brace1",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_brace1",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 3,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1897,
+            "sourceY": 332.5,
+            "targetX": 1947,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-brace_low1output-create_brace1input",
+            "type": "default",
+            "source": "brace_low1",
+            "target": "create_brace1",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "brace_low1",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1620,
+                    "y": 535,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1620,
+                    "y": 535
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "brace_low1",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node brace_low1",
+                    "params": {
+                        "type": "Brace",
+                        "left_bracket_position": "[2.44948974278, 2, 0]",
+                        "right_bracket_position": "[2.44948974278, 4, 0]",
+                        "color": "WHITE",
+                        "stroke_width": "2",
+                        "use_axes": true,
+                        "chooseType": [
+                            "basic",
+                            "Brace"
+                        ],
+                        "lastType": [
+                            "basic",
+                            "Brace"
+                        ],
+                        "necessary": [
+                            "left_bracket_position",
+                            "right_bracket_position",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_brace1",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1947,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1947,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_brace1",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_brace1",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_brace1",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 3,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1897,
+            "sourceY": 717.5,
+            "targetX": 1947,
+            "targetY": 282.5
+        },
+        {
+            "id": "vueflow__edge-create_brace1output-Transform_brace_highinput",
+            "type": "default",
+            "source": "create_brace1",
+            "target": "Transform_brace_high",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "create_brace1",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1947,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1947,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_brace1",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_brace1",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_brace1",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 3,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "Transform_brace_high",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1947,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1947,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "Transform_brace_high",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "input_target",
+                            "position": "left",
+                            "nodeId": "Transform_brace_high",
+                            "type": "source",
+                            "x": -3,
+                            "y": 176.66666666666666,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "Transform_brace_high",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node Transform_brace_high",
+                    "params": {
+                        "type": "Transform",
+                        "run_time": 1.3,
+                        "start_time": 6,
+                        "target_object": "brace_high2",
+                        "rate_func": "linear",
+                        "chooseType": "Transform",
+                        "lastType": "Transform",
+                        "necessary": [
+                            "target_object",
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 2122,
+            "sourceY": 282.5,
+            "targetX": 1947,
+            "targetY": 682.5
+        },
+        {
+            "id": "vueflow__edge-brace_low1output-Transform_brace_lowinput",
+            "type": "default",
+            "source": "brace_low1",
+            "target": "Transform_brace_low",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "brace_low1",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1620,
+                    "y": 535,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1620,
+                    "y": 535
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "brace_low1",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node brace_low1",
+                    "params": {
+                        "type": "Brace",
+                        "left_bracket_position": "[2.44948974278, 2, 0]",
+                        "right_bracket_position": "[2.44948974278, 4, 0]",
+                        "color": "WHITE",
+                        "stroke_width": "2",
+                        "use_axes": true,
+                        "chooseType": [
+                            "basic",
+                            "Brace"
+                        ],
+                        "lastType": [
+                            "basic",
+                            "Brace"
+                        ],
+                        "necessary": [
+                            "left_bracket_position",
+                            "right_bracket_position",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "Transform_brace_low",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1447,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1447,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "Transform_brace_low",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "input_target",
+                            "position": "left",
+                            "nodeId": "Transform_brace_low",
+                            "type": "source",
+                            "x": -3,
+                            "y": 176.66666666666666,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "Transform_brace_low",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node Transform_brace_low",
+                    "params": {
+                        "type": "Transform",
+                        "run_time": 1.3,
+                        "start_time": 6,
+                        "target_object": "brace_low2",
+                        "rate_func": "linear",
+                        "chooseType": "Transform",
+                        "lastType": "Transform",
+                        "necessary": [
+                            "target_object",
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1897,
+            "sourceY": 717.5,
+            "targetX": 1447,
+            "targetY": 682.5
+        },
+        {
+            "id": "vueflow__edge-line_highoutput-move_e_line_highinput",
+            "type": "default",
+            "source": "line_high",
+            "target": "move_e_line_high",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "line_high",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1120,
+                    "y": 150,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1120,
+                    "y": 150
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "line_high",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node line_high",
+                    "params": {
+                        "type": "Graph",
+                        "function": "6",
+                        "x_range": "[-5, 5]",
+                        "color": "GREEN",
+                        "stroke_width": 2,
+                        "use_axes": "true",
+                        "chooseType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "necessary": [
+                            "function",
+                            "x_range",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "move_e_line_high",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 670,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 670,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_e_line_high",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_e_line_high",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_e_line_high",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 6,
+                        "target": "[0, 5, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1397,
+            "sourceY": 332.5,
+            "targetX": 670,
+            "targetY": 682.5
+        },
+        {
+            "id": "vueflow__edge-line_lowoutput-move_e_line_lowinput",
+            "type": "default",
+            "source": "line_low",
+            "target": "move_e_line_low",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "line_low",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1120,
+                    "y": 535,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1120,
+                    "y": 535
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "line_low",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node line_low",
+                    "params": {
+                        "type": "Graph",
+                        "function": "2",
+                        "x_range": "[-5, 5]",
+                        "color": "GREEN",
+                        "stroke_width": 2,
+                        "use_axes": "true",
+                        "chooseType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "lastType": [
+                            "axis",
+                            "Graph"
+                        ],
+                        "necessary": [
+                            "function",
+                            "x_range",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "move_e_line_low",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 170,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 170,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_e_line_low",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_e_line_low",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_e_line_low",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 6,
+                        "target": "[0, 3, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1397,
+            "sourceY": 717.5,
+            "targetX": 170,
+            "targetY": 682.5
+        },
+        {
+            "id": "vueflow__edge-Transform_brace_highoutput-fadeout_braceinput",
+            "type": "default",
+            "source": "Transform_brace_high",
+            "target": "fadeout_brace",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "Transform_brace_high",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1947,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1947,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "Transform_brace_high",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "input_target",
+                            "position": "left",
+                            "nodeId": "Transform_brace_high",
+                            "type": "source",
+                            "x": -3,
+                            "y": 176.66666666666666,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "Transform_brace_high",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node Transform_brace_high",
+                    "params": {
+                        "type": "Transform",
+                        "run_time": 1.3,
+                        "start_time": 6,
+                        "target_object": "brace_high2",
+                        "rate_func": "linear",
+                        "chooseType": "Transform",
+                        "lastType": "Transform",
+                        "necessary": [
+                            "target_object",
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "fadeout_brace",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1620,
+                    "y": 1350,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1620,
+                    "y": 1350
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "fadeout_brace",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "fadeout_brace",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node fadeout_brace",
+                    "params": {
+                        "type": "FadeOut",
+                        "run_time": 2,
+                        "start_time": 9,
+                        "rate_func": "linear",
+                        "chooseType": "FadeOut",
+                        "lastType": "FadeOut",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 2122,
+            "sourceY": 682.5,
+            "targetX": 1620,
+            "targetY": 1482.5
+        },
+        {
+            "id": "vueflow__edge-Transform_brace_lowoutput-fadeout_braceinput",
+            "type": "default",
+            "source": "Transform_brace_low",
+            "target": "fadeout_brace",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "Transform_brace_low",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1447,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1447,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "Transform_brace_low",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "input_target",
+                            "position": "left",
+                            "nodeId": "Transform_brace_low",
+                            "type": "source",
+                            "x": -3,
+                            "y": 176.66666666666666,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "Transform_brace_low",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node Transform_brace_low",
+                    "params": {
+                        "type": "Transform",
+                        "run_time": 1.3,
+                        "start_time": 6,
+                        "target_object": "brace_low2",
+                        "rate_func": "linear",
+                        "chooseType": "Transform",
+                        "lastType": "Transform",
+                        "necessary": [
+                            "target_object",
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "fadeout_brace",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1620,
+                    "y": 1350,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1620,
+                    "y": 1350
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "fadeout_brace",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "fadeout_brace",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node fadeout_brace",
+                    "params": {
+                        "type": "FadeOut",
+                        "run_time": 2,
+                        "start_time": 9,
+                        "rate_func": "linear",
+                        "chooseType": "FadeOut",
+                        "lastType": "FadeOut",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1622,
+            "sourceY": 682.5,
+            "targetX": 1620,
+            "targetY": 1482.5
+        },
+        {
+            "id": "vueflow__edge-move_e_line_lowoutput-move_e_line_midinput",
+            "type": "default",
+            "source": "move_e_line_low",
+            "target": "move_e_line_mid",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "move_e_line_low",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 170,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 170,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_e_line_low",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_e_line_low",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_e_line_low",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 6,
+                        "target": "[0, 3, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "move_e_line_mid",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1825,
+                    "y": 1350,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1825,
+                    "y": 1350
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_e_line_mid",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_e_line_mid",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_e_line_mid",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 9,
+                        "target": "[0, 4, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 345,
+            "sourceY": 682.5,
+            "targetX": 1825,
+            "targetY": 1482.5
+        },
+        {
+            "id": "vueflow__edge-move_e_line_highoutput-move_e_line_midinput",
+            "type": "default",
+            "source": "move_e_line_high",
+            "target": "move_e_line_mid",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "move_e_line_high",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 670,
+                    "y": 550,
+                    "z": 0
+                },
+                "position": {
+                    "x": 670,
+                    "y": 550
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_e_line_high",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_e_line_high",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_e_line_high",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 6,
+                        "target": "[0, 5, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "move_e_line_mid",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1825,
+                    "y": 1350,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1825,
+                    "y": 1350
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_e_line_mid",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_e_line_mid",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_e_line_mid",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 9,
+                        "target": "[0, 4, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 845,
+            "sourceY": 682.5,
+            "targetX": 1825,
+            "targetY": 1482.5
+        },
+        {
+            "id": "vueflow__edge-text1output-create_text1input",
+            "type": "default",
+            "source": "text1",
+            "target": "create_text1",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "text1",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 120,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 120,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "text1",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node text1",
+                    "params": {
+                        "type": "Text",
+                        "content": "e",
+                        "position": "[3.1, 5, 0]",
+                        "font_size": 24,
+                        "color": "WHITE",
+                        "use_axes": true,
+                        "chooseType": [
+                            "text",
+                            "Text"
+                        ],
+                        "lastType": [
+                            "text",
+                            "Text"
+                        ],
+                        "necessary": [
+                            "content",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_text1",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 447,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 447,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_text1",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_text1",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_text1",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 3,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 397,
+            "sourceY": 1132.5,
+            "targetX": 447,
+            "targetY": 1082.5
+        },
+        {
+            "id": "vueflow__edge-text2output-create_text1input",
+            "type": "default",
+            "source": "text2",
+            "target": "create_text1",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "text2",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 120,
+                    "y": 1335,
+                    "z": 0
+                },
+                "position": {
+                    "x": 120,
+                    "y": 1335
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "text2",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node text2",
+                    "params": {
+                        "type": "Text",
+                        "content": "e",
+                        "position": "[3.1, 3, 0]",
+                        "font_size": 24,
+                        "color": "WHITE",
+                        "use_axes": true,
+                        "chooseType": [
+                            "text",
+                            "Text"
+                        ],
+                        "lastType": [
+                            "text",
+                            "Text"
+                        ],
+                        "necessary": [
+                            "content",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_text1",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 447,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 447,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_text1",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_text1",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_text1",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 3,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 397,
+            "sourceY": 1517.5,
+            "targetX": 447,
+            "targetY": 1082.5
+        },
+        {
+            "id": "vueflow__edge-text1output-move_text_highinput",
+            "type": "default",
+            "source": "text1",
+            "target": "move_text_high",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "text1",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 120,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 120,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "text1",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node text1",
+                    "params": {
+                        "type": "Text",
+                        "content": "e",
+                        "position": "[3.1, 5, 0]",
+                        "font_size": 24,
+                        "color": "WHITE",
+                        "use_axes": true,
+                        "chooseType": [
+                            "text",
+                            "Text"
+                        ],
+                        "lastType": [
+                            "text",
+                            "Text"
+                        ],
+                        "necessary": [
+                            "content",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "move_text_high",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 670,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 670,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_text_high",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_text_high",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_text_high",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 6,
+                        "target": "[3, 4.5, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 397,
+            "sourceY": 1132.5,
+            "targetX": 670,
+            "targetY": 1082.5
+        },
+        {
+            "id": "vueflow__edge-text2output-move_text_lowinput",
+            "type": "default",
+            "source": "text2",
+            "target": "move_text_low",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "text2",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 120,
+                    "y": 1335,
+                    "z": 0
+                },
+                "position": {
+                    "x": 120,
+                    "y": 1335
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "text2",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node text2",
+                    "params": {
+                        "type": "Text",
+                        "content": "e",
+                        "position": "[3.1, 3, 0]",
+                        "font_size": 24,
+                        "color": "WHITE",
+                        "use_axes": true,
+                        "chooseType": [
+                            "text",
+                            "Text"
+                        ],
+                        "lastType": [
+                            "text",
+                            "Text"
+                        ],
+                        "necessary": [
+                            "content",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "move_text_low",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1170,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1170,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_text_low",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_text_low",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_text_low",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 6,
+                        "target": "[3, 3.5, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 397,
+            "sourceY": 1517.5,
+            "targetX": 1170,
+            "targetY": 1082.5
+        },
+        {
+            "id": "vueflow__edge-move_text_highoutput-fadeout_textinput",
+            "type": "default",
+            "source": "move_text_high",
+            "target": "fadeout_text",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "move_text_high",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 670,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 670,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_text_high",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_text_high",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_text_high",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 6,
+                        "target": "[3, 4.5, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "fadeout_text",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 2030,
+                    "y": 1350,
+                    "z": 0
+                },
+                "position": {
+                    "x": 2030,
+                    "y": 1350
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "fadeout_text",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "fadeout_text",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node fadeout_text",
+                    "params": {
+                        "type": "FadeOut",
+                        "run_time": 2,
+                        "start_time": 9,
+                        "rate_func": "linear",
+                        "chooseType": "FadeOut",
+                        "lastType": "FadeOut",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 845,
+            "sourceY": 1082.5,
+            "targetX": 2030,
+            "targetY": 1482.5
+        },
+        {
+            "id": "vueflow__edge-move_text_lowoutput-fadeout_textinput",
+            "type": "default",
+            "source": "move_text_low",
+            "target": "fadeout_text",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "move_text_low",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1170,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1170,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "move_text_low",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "move_text_low",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node move_text_low",
+                    "params": {
+                        "type": "MoveTo",
+                        "run_time": 2,
+                        "start_time": 6,
+                        "target": "[3, 3.5, 0]",
+                        "rate_func": "linear",
+                        "use_axes": true,
+                        "chooseType": "MoveTo",
+                        "lastType": "MoveTo",
+                        "necessary": [
+                            "target",
+                            "run_time",
+                            "start_time",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "fadeout_text",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 2030,
+                    "y": 1350,
+                    "z": 0
+                },
+                "position": {
+                    "x": 2030,
+                    "y": 1350
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "fadeout_text",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "fadeout_text",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node fadeout_text",
+                    "params": {
+                        "type": "FadeOut",
+                        "run_time": 2,
+                        "start_time": 9,
+                        "rate_func": "linear",
+                        "chooseType": "FadeOut",
+                        "lastType": "FadeOut",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1345,
+            "sourceY": 1082.5,
+            "targetX": 2030,
+            "targetY": 1482.5
+        },
+        {
+            "id": "vueflow__edge-text_finaloutput-create_text_finalinput",
+            "type": "default",
+            "source": "text_final",
+            "target": "create_text_final",
+            "sourceHandle": "output",
+            "targetHandle": "input",
+            "data": {},
+            "events": {},
+            "label": "",
+            "sourceNode": {
+                "id": "text_final",
+                "type": "generate",
+                "blockType": "generate",
+                "dimensions": {
+                    "width": 277,
+                    "height": 365
+                },
+                "computedPosition": {
+                    "x": 1620,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1620,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "text_final",
+                            "type": "source",
+                            "x": 267,
+                            "y": 182.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node text_final",
+                    "params": {
+                        "type": "Text",
+                        "content": "e -> 0",
+                        "position": "[3, 5, 0]",
+                        "font_size": 24,
+                        "color": "WHITE",
+                        "use_axes": true,
+                        "chooseType": [
+                            "text",
+                            "Text"
+                        ],
+                        "lastType": [
+                            "text",
+                            "Text"
+                        ],
+                        "necessary": [
+                            "content",
+                            "use_axes"
+                        ]
+                    }
+                }
+            },
+            "targetNode": {
+                "id": "create_text_final",
+                "type": "animation",
+                "blockType": "animation",
+                "dimensions": {
+                    "width": 175,
+                    "height": 265
+                },
+                "computedPosition": {
+                    "x": 1947,
+                    "y": 950,
+                    "z": 0
+                },
+                "position": {
+                    "x": 1947,
+                    "y": 950
+                },
+                "handleBounds": {
+                    "source": [
+                        {
+                            "id": "input",
+                            "position": "left",
+                            "nodeId": "create_text_final",
+                            "type": "source",
+                            "x": -3,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        },
+                        {
+                            "id": "output",
+                            "position": "right",
+                            "nodeId": "create_text_final",
+                            "type": "source",
+                            "x": 165,
+                            "y": 132.5,
+                            "width": 8,
+                            "height": 8
+                        }
+                    ],
+                    "target": []
+                },
+                "selected": false,
+                "dragging": false,
+                "resizing": false,
+                "initialized": false,
+                "isParent": false,
+                "events": {},
+                "data": {
+                    "label": "Node create_text_final",
+                    "params": {
+                        "type": "Create",
+                        "run_time": 2,
+                        "start_time": 10,
+                        "rate_func": "linear",
+                        "chooseType": "Create",
+                        "lastType": "Create",
+                        "necessary": [
+                            "run_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            },
+            "animated": true,
+            "markerEnd": "arrowclosed",
+            "style": {
+                "strokeWidth": "3",
+                "cursor": "point"
+            },
+            "sourceX": 1897,
+            "sourceY": 1132.5,
+            "targetX": 1947,
+            "targetY": 1082.5
+        }
+    ]
+}
