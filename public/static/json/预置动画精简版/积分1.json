@@ -68,26 +68,6 @@
             }
         },
         {
-            "id": "block_2",
-            "blockType": "animation",
-            "data": {
-                "params": {
-                    "type": "Show",
-                    "start_time": "0.1",
-                    "run_time": 1,
-                    "chooseType": [
-                        "Show"
-                    ],
-                    "necessary": [
-                        "start_time"
-                    ],
-                    "lastType": [
-                        "Show"
-                    ]
-                }
-            }
-        },
-        {
             "id": "block_0",
             "blockType": "generate",
             "data": {
@@ -147,7 +127,7 @@
             }
         },
         {
-            "id": "block_2",
+            "id": "block_2_1",
             "blockType": "animation",
             "data": {
                 "params": {
@@ -558,35 +538,6 @@
             }
         },
         {
-            "id": "block_0",
-            "blockType": "generate",
-            "data": {
-                "params": {
-                    "type": "Riemann",
-                    "curve": "block_1",
-                    "x_range": [
-                        0,
-                        6
-                    ],
-                    "width": "6",
-                    "use_axes": true,
-                    "chooseType": [
-                        "basic",
-                        "Riemann"
-                    ],
-                    "necessary": [
-                        "curve",
-                        "x_range",
-                        "width"
-                    ],
-                    "lastType": [
-                        "basic",
-                        "Riemann"
-                    ]
-                }
-            }
-        },
-        {
             "id": "block_1",
             "blockType": "generate",
             "data": {
@@ -617,7 +568,7 @@
             }
         },
         {
-            "id": "block_2",
+            "id": "block_2_2",
             "blockType": "animation",
             "data": {
                 "params": {
@@ -635,263 +586,23 @@
                     ]
                 }
             }
-        },
-        {
-            "id": "block_3",
-            "blockType": "generate",
-            "data": {
-                "params": {
-                    "type": "Riemann",
-                    "curve": "block_1",
-                    "x_range": [
-                        0,
-                        6
-                    ],
-                    "width": "2",
-                    "use_axes": true,
-                    "chooseType": [
-                        "basic",
-                        "Riemann"
-                    ],
-                    "necessary": [
-                        "curve",
-                        "x_range",
-                        "width"
-                    ],
-                    "lastType": [
-                        "basic",
-                        "Riemann"
-                    ]
-                }
-            }
-        },
-        {
-            "id": "block_4",
-            "blockType": "generate",
-            "data": {
-                "params": {
-                    "type": "Riemann",
-                    "curve": "block_1",
-                    "x_range": [
-                        0,
-                        6
-                    ],
-                    "width": "1",
-                    "use_axes": true,
-                    "chooseType": [
-                        "basic",
-                        "Riemann"
-                    ],
-                    "necessary": [
-                        "curve",
-                        "x_range",
-                        "width"
-                    ],
-                    "lastType": [
-                        "basic",
-                        "Riemann"
-                    ]
-                }
-            }
-        },
-        {
-            "id": "block_5",
-            "blockType": "generate",
-            "data": {
-                "params": {
-                    "type": "Riemann",
-                    "curve": "block_1",
-                    "x_range": [
-                        0,
-                        6
-                    ],
-                    "width": 0.1,
-                    "use_axes": true,
-                    "chooseType": [
-                        "basic",
-                        "Riemann"
-                    ],
-                    "necessary": [
-                        "curve",
-                        "x_range",
-                        "width"
-                    ],
-                    "lastType": [
-                        "basic",
-                        "Riemann"
-                    ]
-                }
-            }
-        },
-        {
-            "id": "block_6",
-            "blockType": "generate",
-            "data": {
-                "params": {
-                    "type": "Riemann",
-                    "curve": "block_1",
-                    "x_range": [
-                        0,
-                        6
-                    ],
-                    "width": "0.05",
-                    "use_axes": true,
-                    "chooseType": [
-                        "basic",
-                        "Riemann"
-                    ],
-                    "necessary": [
-                        "curve",
-                        "x_range",
-                        "width"
-                    ],
-                    "lastType": [
-                        "basic",
-                        "Riemann"
-                    ]
-                }
-            }
-        },
-        {
-            "id": "block_7",
-            "blockType": "generate",
-            "data": {
-                "params": {
-                    "type": "Riemann",
-                    "curve": "block_1",
-                    "x_range": [
-                        0,
-                        6
-                    ],
-                    "width": "0.01",
-                    "use_axes": true,
-                    "chooseType": [
-                        "basic",
-                        "Riemann"
-                    ],
-                    "necessary": [
-                        "curve",
-                        "x_range",
-                        "width"
-                    ],
-                    "lastType": [
-                        "basic",
-                        "Riemann"
-                    ]
-                }
-            }
-        },
-        {
-            "id": "block_8",
-            "blockType": "animation",
-            "data": {
-                "params": {
-                    "type": "Show",
-                    "start_time": "1",
-                    "run_time": 1,
-                    "chooseType": [
-                        "Show"
-                    ],
-                    "necessary": [
-                        "start_time"
-                    ],
-                    "lastType": [
-                        "Show"
-                    ]
-                }
-            }
-        },
-        {
-            "id": "block_9",
-            "blockType": "animation",
-            "data": {
-                "params": {
-                    "type": "ReplacementTransform",
-                    "target_object": "block_3",
-                    "rate_func": "linear",
-                    "run_time": "2",
-                    "start_time": "2",
-                    "chooseType": [
-                        "ReplacementTransform"
-                    ],
-                    "necessary": [
-                        "target_object",
-                        "run_time",
-                        "start_time"
-                    ],
-                    "lastType": [
-                        "ReplacementTransform"
-                    ]
-                }
-            },
-            "target_object": "block_3"
-        },
-        {
-            "id": "block_10",
-            "blockType": "animation",
-            "data": {
-                "params": {
-                    "type": "ReplacementTransform",
-                    "target_object": "block_4",
-                    "rate_func": "linear",
-                    "run_time": "2",
-                    "start_time": "5",
-                    "chooseType": [
-                        "ReplacementTransform"
-                    ],
-                    "necessary": [
-                        "target_object",
-                        "run_time",
-                        "start_time"
-                    ],
-                    "lastType": [
-                        "ReplacementTransform"
-                    ]
-                }
-            },
-            "target_object": "block_4"
-        },
-        {
-            "id": "block_11",
-            "blockType": "animation",
-            "data": {
-                "params": {
-                    "type": "ReplacementTransform",
-                    "target_object": "block_5",
-                    "rate_func": "linear",
-                    "run_time": "2",
-                    "start_time": "8",
-                    "chooseType": [
-                        "ReplacementTransform"
-                    ],
-                    "necessary": [
-                        "target_object",
-                        "run_time",
-                        "start_time"
-                    ],
-                    "lastType": [
-                        "ReplacementTransform"
-                    ]
-                }
-            },
-            "target_object": "block_5"
         }
     ],
     "edges": [
         {
             "source": "axis",
-            "target": "block_2"
+            "target": "block_2_1"
         },
         {
             "source": "block_1",
-            "target": "block_2"
+            "target": "block_2_2"
         },
         {
             "source": "block_0",
             "target": "block_8"
         },
         {
-            "source": "block_0",
+            "source": "block_8",
             "target": "block_9"
         },
         {

@@ -67,7 +67,7 @@
       <el-button size="large" class="button" @click="sendGraphDataToBackend">
         <el-icon size="large"><View /></el-icon>&ensp;预览
       </el-button>
-      <el-button size="large" class="button" @click="downloadDialog = true">
+      <el-button size="large" class="button" @click="handleDownloadClick">
         <el-icon size="large"><Download /></el-icon>&ensp;下载
       </el-button>
       <el-button size="large" class="button" @click="saveDialog = true">
@@ -85,7 +85,7 @@
     </div>
     <div class="main">
       <el-row>
-        <el-col :span="programSpan" class="program-area">
+        <el-col :span="programSpan" class="program-area transition-col">
           <!-- Main Editing Area: Swimlane Timeline -->
           <div class="swimlane-timeline-editor"  ref="swimlaneEditorRef" @dragover="onDragOverTimeline" @drop="onDropTimeline">
             
@@ -212,7 +212,7 @@
       </el-col>
 
         <!-- Right Panel: Parameter Editing -->
-        <el-col :span="animationSpan" class="animation-panel">
+        <el-col :span="animationSpan" class="animation-panel transition-col">
           <el-button
             icon="DArrowRight"
             link
@@ -220,7 +220,7 @@
             @click="fold"
             :style="{transform: isFold ? 'rotate(180deg)' : 'rotate(0deg)',transition: 'transform 0.2s ease'}"
           ></el-button>
-          
+          <transition name="fade-in-fast">
           <div class="node-info" v-if="!isFold">
             <h3>{{ selectedItemDescription }}</h3>
             <div v-if="selectedItem && selectedItem.data">
@@ -758,6 +758,7 @@
             </div>
             <p v-else>未选中任何元素或片段</p>
           </div>
+          </transition>
         </el-col>
       </el-row>
     </div>
@@ -887,21 +888,22 @@ const timelineItems = computed(() => {
 // 根据动画类型返回对应的颜色
 function getColorForAnimationType(type) {
   const colorMap = {
-    'MoveTo': 'var(--el-color-primary-light-3)',       // 更深的蓝色
-    'Rotate': 'var(--el-color-success-light-3)',       // 更深的绿色
-    'Scale': 'var(--el-color-warning-light-3)',        // 更深的黄色
-    'FadeIn': 'var(--el-color-danger-light-3)',        // 更深的红色
-    'FadeOut': 'var(--el-color-info-light-3)',         // 更深的灰色
-    'Transform': 'var(--el-color-primary-light-1)',    // 更深的蓝色
-    'ReplacementTransform': 'var(--el-color-success-light-1)', // 更深的绿色
-    'FollowPath': 'var(--el-color-warning-light-1)',   // 更深的黄色
-    'Create': 'var(--el-color-primary-light-4)',       // 蓝色变体
-    'ApplyMatrix': 'var(--el-color-success-light-4)',  // 绿色变体
-    'SetColor': 'var(--el-color-warning-light-4)',     // 黄色变体
-   'Show': 'var(--el-color-black)',           // 灰色，更明显
+    // 核心修正：将原先的蓝色替换为更多样的颜色
+    'MoveTo': 'var(--el-color-primary-light-3)',        // 移动 -> 淡红色
+    'Rotate': 'var(--el-color-success-light-3)',       // 旋转 -> 绿色 (保持)
+    'Scale': 'var(--el-color-warning-light-3)',        // 缩放 -> 黄色 (保持)
+    'FadeIn': 'var(--el-color-danger-light-3)',        // 淡入 -> 红色 (保持)
+    'FadeOut': 'var(--el-color-info-light-3)',         // 淡出 -> 灰色 (保持)
+    'Transform': 'var(--el-color-info-dark-2)',        // 变换 -> 深灰色
+    'ReplacementTransform': 'var(--el-color-success-light-1)', // 替换变换 -> 深绿色 (保持)
+    'FollowPath': 'var(--el-color-danger-light-5)',   // 路径 -> 深黄色 (保持)
+    'Create': 'var(--el-color-warning-light-5)',       // 创建 -> 淡橙色
+    'ApplyMatrix': 'var(--el-color-success-light-4)',  // 矩阵 -> 绿色变体 (保持)
+    'SetColor': 'var(--el-color-warning-light-4)',     // 设色 -> 黄色变体 (保持)
+    'Show': 'var(--el-color-black)',                   // 显示 -> 黑色 (保持)
   };
   
-  return colorMap[type] || 'var(--el-color-primary-light-5)';
+  return colorMap[type] || 'var(--el-color-primary-light-5)'; // 默认颜色
 }
 
 
@@ -2955,8 +2957,32 @@ function downloadAnim() {
   fullscreenLoading.value = true;
   const graphData = collectGraphData();
   var promise = DownloadVideo({
+    projectName: "project_name",
     quality: quality.value,
     frame_rate: frame_rate.value,
+    nodes: graphData.nodes,
+    edges: graphData.edges
+  });
+  promise.then((result) => {
+    ElMessage.success(`导出成功！视频位于 ${result.video_path}`);
+  })
+  .finally(() => {
+    fullscreenLoading.value = false;
+  });
+}
+
+function handleDownloadClick() {
+  var res = checkNecessary();
+  if(res !== true) {
+    ElMessage.error(res);
+    return;
+  }
+  
+  fullscreenLoading.value = true;
+  const graphData = collectGraphData();
+  var promise = DownloadVideo({
+    projectName: "project_name",
+    // quality 和 frame_rate 参数已被移除
     nodes: graphData.nodes,
     edges: graphData.edges
   });
@@ -3919,5 +3945,21 @@ const handleKeyDown = (event) => {
 }
 .show-animation-item {
   color:white;
+}
+
+/* 新增：为左右布局添加过渡动画 */
+.transition-col {
+  transition: max-width 0.3s ease, flex-basis 0.3s ease;
+}
+
+/* 新增：为右侧面板内容添加淡入淡出效果 */
+.fade-in-fast-enter-active,
+.fade-in-fast-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-in-fast-enter-from,
+.fade-in-fast-leave-to {
+  opacity: 0;
 }
 </style>

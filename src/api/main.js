@@ -5,7 +5,7 @@ export function PostVideo(data){
 }
 
 export function DownloadVideo(data){
-    return post("/parser/Rendering/",data)
+    return post("/parser/remote/export/",data)
 }
 
 export function GetProject(){

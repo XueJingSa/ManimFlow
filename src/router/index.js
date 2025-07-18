@@ -9,11 +9,11 @@ const router = createRouter({
       name: 'main',
       component: () => import('../views/Main2.vue'),
     },
-    // {
-    //   path: '/main2',
-    //   name: 'main2',
-    //   component: () => import('../views/Main.vue'),
-    // },
+    {
+      path: '/main2',
+      name: 'main2',
+      component: () => import('../views/Main.vue'),
+    },
     {
       path: '/',
       redirect: '/main'

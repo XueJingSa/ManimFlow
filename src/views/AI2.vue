@@ -508,7 +508,7 @@ function extractJsonFromResponse(content) {
 
           localStorage.setItem('vueflow-nodes', JSON.stringify(nodes));
           localStorage.setItem('vueflow-edges', JSON.stringify(edges));
-          window.open(`${window.location.origin}/main2`, '_blank');
+          window.open(`${window.location.origin}/main`, '_blank');
 
           console.log("更新后的 nodes:", nodes);
           console.log("更新后的 edges:", edges);

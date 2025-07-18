@@ -13,7 +13,7 @@
       <el-menu v-else class="menu" @select="selectConversation" :default-active="activeMenu"> 
         <div class="sidebar-header">
           <div class="title">
-            <span>ManimAI</span>
+            <span>EduVerseAI</span>
             <!-- 按钮回归到标题栏右侧 -->
             <el-button @click="fold" class="collapse-btn-inner" text>
               <el-icon><DArrowLeft /></el-icon>
@@ -92,14 +92,14 @@
             <div class="placeholder-content">
               
               <h2 class="placeholder-title">开启您的创作之旅</h2>
-              <p class="placeholder-subtitle">这里还空空如也，尝试在下方的输入框向 ManimAI 发出您的第一条指令吧！</p>
+              <p class="placeholder-subtitle">这里还空空如也，尝试在下方的输入框向 EduVerseAI 发出您的第一条指令吧！</p>
             </div>
           </div>
         </el-scrollbar>
         <!-- 更新此处的 v-else 模块 -->
         <div v-else class="welcome-page">
           
-          <h1 class="welcome-title">ManimAI</h1>
+          <h1 class="welcome-title">EduVerseAI</h1>
           <p class="welcome-subtitle">请从左侧选择或创建一个新会话开始您的创作之旅</p>
           <div class="suggestion-cards">
             <div class="suggestion-card">
@@ -274,7 +274,7 @@ function loadCardToCanvas(creation) {
   const { nodes, edges } = creation.json_data;
   localStorage.setItem('vueflow-nodes', JSON.stringify(nodes));
   localStorage.setItem('vueflow-edges', JSON.stringify(edges));
-  window.open(`${window.location.origin}/main2`, '_blank');
+  window.open(`${window.location.origin}/main`, '_blank');
 }
 
 // V3.25 新增：加载编辑后的JSON到画布
@@ -290,7 +290,7 @@ function handleLoadEditedJson() {
     const { nodes, edges } = jsonData;
     localStorage.setItem('vueflow-nodes', JSON.stringify(nodes));
     localStorage.setItem('vueflow-edges', JSON.stringify(edges));
-    window.open(`${window.location.origin}/main2`, '_blank');
+    window.open(`${window.location.origin}/main`, '_blank');
     
     isJsonViewerVisible.value = false; // 成功后关闭模态框
   } catch (e) {
@@ -442,7 +442,7 @@ function startPolling(creationId) {
     checkStatus();
     // 然后设置定时器进行后续轮询
     pollingInterval = setInterval(checkStatus, 2000);
-  }, 1000); // 延迟1000毫秒
+  }, 500); // 延迟1000毫秒
   
 }
 function stopPolling() {
